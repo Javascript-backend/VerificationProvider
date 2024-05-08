@@ -146,7 +146,7 @@ public class VerificationService(ILogger<VerificationService> logger, IServicePr
         try
         {
             var rnd = new Random();
-            var code = rnd.Next(100000, 99999);
+            var code = rnd.Next(100000, 999999);
 
             return code.ToString();
         }
